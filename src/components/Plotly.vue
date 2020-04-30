@@ -3,6 +3,10 @@
 </template>
 <script>
 import Plotly from "plotly.js";
+import locale from 'plotly.js-locales/es';
+Plotly.register(locale);
+Plotly.setPlotConfig({ locale: 'es' })
+
 import events from "./events.js";
 import methods from "./methods.js";
 import { camelize } from "@/utils/helper";
